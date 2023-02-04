@@ -19,23 +19,23 @@ const Login = (props) => {
   //   };
   // }, []);
 
-  // useEffect(()=>{
-  //   const identifier=setTimeout(() => {
-  //     console.log('checking form validity')
-  //     setFormIsValid(
+  useEffect(()=>{
+    const identifier=setTimeout(() => {
+      console.log('checking form validity')
+      setFormIsValid(
       
-  //       enteredEmail.includes('@') && enteredPassword.trim().length > 6
-  //     );
-  //   }, 500);
+        enteredEmail.includes('@') && enteredPassword.trim().length > 6
+      );
+    }, 500);
 
-  //   return ()=>{
-  //     console.log('cleanup')
-  //     clearInterval(identifier)
+    return ()=>{
+      console.log('cleanup')
+      clearInterval(identifier)
 
-  //   }
+    }
     
     
-  // },[enteredEmail,enteredPassword])
+  },[enteredEmail,enteredPassword])
 
   // useEffect(() => {
   //   const identifier = setTimeout(() => {
